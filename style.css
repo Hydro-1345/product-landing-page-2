@@ -1,0 +1,221 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        #header {
+            background-color: #2e7d32;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #header-img {
+            width: 120px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        #nav-bar {
+            display: flex;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #c8e6c9;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        main {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        #hero {
+            padding: 60px 20px;
+            background-color: #e8f5e9;
+        }
+
+        #hero h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #email {
+            padding: 12px;
+            width: 280px;
+            max-width: 100%;
+            font-size: 16px;
+            border: 2px solid #2e7d32;
+            border-radius: 5px;
+        }
+
+        #submit {
+            padding: 12px 30px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #submit:hover {
+            background-color: #388e3c;
+        }
+
+        #features {
+            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feature-card {
+            max-width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        #how-it-works {
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #video {
+            max-width: 100%;
+            width: 560px;
+            height: 315px;
+        }
+
+        #pricing {
+            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .pricing-card {
+            max-width: 250px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .pricing-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        .pricing-card p.price {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card button {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pricing-card button:hover {
+            background-color: #388e3c;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: #2e7d32;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            #menu-toggle:checked + nav .nav-links {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            #video {
+                width: 100%;
+                height: auto;
+            }
+        }
